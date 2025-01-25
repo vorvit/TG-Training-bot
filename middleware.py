@@ -11,6 +11,7 @@ class LoggingMiddleware(BaseMiddleware):
             user_id = event.from_user.id
             message_text = event.text
 
+            print(f"Получено сообщение: '{message_text}' от пользователя: {user_id}")
             logging.info(f"Получено сообщение: '{message_text}' от пользователя: {user_id}")
 
         await handler(event, data)
