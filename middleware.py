@@ -1,7 +1,7 @@
 import logging
 from aiogram import BaseMiddleware
 from aiogram.types import Message
-from config_reader import LOG_LEVEL
+# from config_reader import LOG_LEVEL
 
 # logging.basicConfig(level=LOG_LEVEL)
 
