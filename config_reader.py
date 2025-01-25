@@ -3,20 +3,20 @@ from pydantic import SecretStr
 import os
 import logging
 
-# LOG_LEVEL = logging.DEBUG
+LOG_LEVEL = logging.DEBUG
 
-# # Определяем путь к директории и файлу логов
-# log_directory = 'logs'
-# log_filename = 'bot_logs.log'
-# log_filepath = os.path.join(log_directory, log_filename)
+# Определяем путь к директории и файлу логов
+log_directory = 'logs'
+log_filename = 'bot_logs.log'
+log_filepath = os.path.join(log_directory, log_filename)
 
-# # Проверяем существует ли директория и создаем ее, если нет
-# if not os.path.exists(log_directory):
-#     os.makedirs(log_directory)
+# Проверяем существует ли директория и создаем ее, если нет
+if not os.path.exists(log_directory):
+    os.makedirs(log_directory)
 
-# # Настраиваем логирование
-# logging.basicConfig(filename=log_filepath, level=LOG_LEVEL,
-#                     format=' %(asctime)s - %(levelname)s - %(message)s')
+# Настраиваем логирование
+logging.basicConfig(filename=log_filepath, level=LOG_LEVEL,
+                    format=' %(asctime)s - %(levelname)s - %(message)s')
 
 class Settings(BaseSettings):
 

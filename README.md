@@ -39,3 +39,11 @@
 ### Редактирование профиля
 
 ![Команда /edit_profile](content/10_edit_profile.gif)
+
+### Запуск бота на render.com
+
+![Deploy](content/Deploy.png)
+
+### Работа бота на render.com
+
+![Work](content/Logs.png)
