@@ -15,7 +15,7 @@ if not os.path.exists(log_directory):
     os.makedirs(log_directory)
 
 # Настраиваем логирование
-logging.basicConfig(filename=log_filepath, level=LOG_LEVEL,
+logging.basicConfig(filename=log_filename, level=LOG_LEVEL,
                     format=' %(asctime)s - %(levelname)s - %(message)s')
 
 class Settings(BaseSettings):
