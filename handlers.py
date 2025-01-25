@@ -366,7 +366,7 @@ async def cmd_log_workout(message: Message):
     duration = float(args[2])
 
     if workout not in CALORIES:
-        await message.reply(f"Выберите тренировку: {'\n'.join(CALORIES.keys())}")
+        await message.reply("Выберите тренировку:\n" + '\n'.join(CALORIES.keys()))
         return
 
     calories = CALORIES[workout] * duration
